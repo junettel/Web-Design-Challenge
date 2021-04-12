@@ -48,60 +48,54 @@
   </div>
   <!-- Navbar end -->
 
-  <!-- Landing page body start s-->
+  <!-- Content start -->
   <div class="container">
-    <div class="row row-grid">
-      <!-- Left box -->
-      <div class="col-7">
-        <div class="box">
-          <h3 id="bigtitle" class="title">Summary: Latitude vs. X</h3>
+    <div class="row">
+      <!-- Big Plot -->
+      <div class="col-lg-7 col-md-12">
+        <div class="box" style="padding-bottom: 5px;">
+          <h3 id="bigtitle" class="title">Wind Speed</h3>
           <hr>
-          <img id="primary-photo" src="Resources/assets/images/Fig1.png" class="img-thumbnail" alt="latitude vs max temperature">
-          <p id="pline2">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this 
-            analysis, we first pulled data from the <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a>  
-            to assemble a dataset on over 500 cities.</p>
-          <br>
-          <p id="pline">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked 
-            at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created 
-            as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+          <img id="img-visualizations" src="Resources/assets/images/Fig4.png" alt="latitude vs wind speed">
+          <p id="pline">The plot shows no observable correlation between city latitude and wind speed. 
+            However, the majority of wind speeds fall between 0-10 MPH with the highest wind speeds observed 
+            in cities further from the equator.
+          </p>
         </div>
       </div>
-      <!-- Right box -->
-      <div class="col-5">
+      <!-- Small Plots -->
+      <div class="col-lg-5 col-md-12">
         <div class="box">
-          <h4 id="smalltitle" class="title">Visualizations</h4>
+          <h4 id="titleleft" class="title">Visualizations</h4>
           <hr>
           <div class="container">
-            <div class="row" style="padding-bottom: 30px;">
+            <div class="row" style="padding-bottom: 75px;">
               <div class="col-6">
-                <figure>
-                  <a href="Visualizations/temperature.html">
-                    <img class="panel" id="visualizations-photo" src="Resources/assets/images/Fig1.png" alt="latitude vs max temperature">
-                  </a>
-                </figure>
+                <h6 id="label" class="label">vs. Temperature</h6>
+                <a href="temperature.html">
+                  <img class="panel" src="Resources/assets/images/Fig1.png" alt="latitude vs max temperature">
+                </a>
               </div>
               <div class="col-6">
-                <figure>
-                  <a href="Visualizations/humidity.html">
-                    <img class="panel" id="visualizations-photo" src="Resources/assets/images/Fig2.png" alt="latitude vs humidity">
-                  </a>
-                </figure>
+                <h6 id="label" class="label">vs. Humidity</h6>
+                <a href="humidity.html">
+                  <img class="panel" src="Resources/assets/images/Fig2.png" alt="latitude vs humidity">
+                </a>
               </div>
             </div>
-            <div class="row" style="padding-bottom: 30px;">
+
+            <div class="row" style="padding-bottom: 75px;">
               <div class="col-6">
-                <figure>
-                  <a href="Visualizations/cloudiness.html">
-                    <img class="panel" id="visualizations-photo" src="Resources/assets/images/Fig3.png" alt="latitude vs cloudiness">
-                  </a>
-                </figure>
+                <h6 id="label" class="label">vs. Cloudiness</h6>
+                <a href="cloudiness.html">
+                  <img class="panel" src="Resources/assets/images/Fig3.png" alt="latitude vs cloudiness">
+                </a>
               </div>
               <div class="col-6">
-                <figure>
-                  <a href="Visualizations/windiness.html">
-                    <img class="panel" id="visualizations-photo" src="Resources/assets/images/Fig4.png" alt="latitude vs wind speed">
-                  </a>
-                </figure>
+                <h6 id="label" class="label">vs. Wind Speed</h6>
+                <a href="windiness.html">
+                  <img class="panel active" src="Resources/assets/images/Fig4.png" alt="latitude vs wind speed">
+                </a>
               </div>
             </div>
           </div>
@@ -109,7 +103,7 @@
       </div>
     </div>
   </div>
-  <!-- Landing page body end -->
+  <!-- Content end -->
 
   <!-- Footer start -->
   <footer>
