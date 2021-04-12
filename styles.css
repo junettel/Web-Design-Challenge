@@ -46,6 +46,10 @@
   font-size: 16px;
 }
 
+.navigation .collapse .navbar-collapse {
+  float: right;
+}
+
 /* Navbar dropdown menu items */
 .dropdown-item {
   color: var(--black);
@@ -81,12 +85,10 @@ img{
   border-color: var(--red);
   border-style: solid;
 }
-.primary-photo {
-  width:50%;
-  height:50%;
-}
-#img-visualizations {
-  padding-bottom: 15px;
+#primary-photo {
+  width:100%;
+  height:100%;
+  padding-bottom: 20px;
 }
 
 /* Title */
